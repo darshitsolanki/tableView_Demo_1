@@ -38,6 +38,38 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="rNG-AM-Sjz">
+            <objects>
+                <viewController restorationIdentifier="DetailViewController" storyboardIdentifier="DetailViewController" id="XZf-Lc-K3U" customClass="DetailViewController" customModule="tableView_Demo_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="65x-qg-7pm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-TG-r4V">
+                                <rect key="frame" x="30" y="94" width="354" height="738"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="q8G-TG-r4V" firstAttribute="top" secondItem="js3-mn-vvy" secondAttribute="top" constant="50" id="4Qr-vd-AC6"/>
+                            <constraint firstItem="js3-mn-vvy" firstAttribute="bottom" secondItem="q8G-TG-r4V" secondAttribute="bottom" constant="30" id="NZs-r9-A3F"/>
+                            <constraint firstItem="q8G-TG-r4V" firstAttribute="leading" secondItem="js3-mn-vvy" secondAttribute="leading" constant="30" id="U9n-Ho-g5F"/>
+                            <constraint firstItem="js3-mn-vvy" firstAttribute="trailing" secondItem="q8G-TG-r4V" secondAttribute="trailing" constant="30" id="lng-iv-ov7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="js3-mn-vvy"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailLbl" destination="q8G-TG-r4V" id="7DR-j5-ydL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFd-ka-sl7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="119"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PNq-ai-pJQ">
             <objects>
