@@ -15,6 +15,8 @@
 		CBB421022448277900FA3CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB421002448277900FA3CC3 /* LaunchScreen.storyboard */; };
 		CBB4210D2448277900FA3CC3 /* tableView_Demo_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB4210C2448277900FA3CC3 /* tableView_Demo_1Tests.swift */; };
 		CBB421182448277900FA3CC3 /* tableView_Demo_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB421172448277900FA3CC3 /* tableView_Demo_1UITests.swift */; };
+		CBB4212724482F8400FA3CC3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB4212524482F8400FA3CC3 /* TableViewCell.swift */; };
+		CBB4212824482F8400FA3CC3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB4212624482F8400FA3CC3 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CBB421132448277900FA3CC3 /* tableView_Demo_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableView_Demo_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB421172448277900FA3CC3 /* tableView_Demo_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableView_Demo_1UITests.swift; sourceTree = "<group>"; };
 		CBB421192448277900FA3CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB4212524482F8400FA3CC3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CBB4212624482F8400FA3CC3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				CBB420F72448277600FA3CC3 /* SceneDelegate.swift */,
 				CBB420F92448277600FA3CC3 /* ViewController.swift */,
 				CBB420FB2448277600FA3CC3 /* Main.storyboard */,
+				CBB4212924482F8D00FA3CC3 /* cell */,
 				CBB420FE2448277900FA3CC3 /* Assets.xcassets */,
 				CBB421002448277900FA3CC3 /* LaunchScreen.storyboard */,
 				CBB421032448277900FA3CC3 /* Info.plist */,
@@ -126,6 +131,15 @@
 				CBB421192448277900FA3CC3 /* Info.plist */,
 			);
 			path = tableView_Demo_1UITests;
+			sourceTree = "<group>";
+		};
+		CBB4212924482F8D00FA3CC3 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				CBB4212524482F8400FA3CC3 /* TableViewCell.swift */,
+				CBB4212624482F8400FA3CC3 /* TableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB421022448277900FA3CC3 /* LaunchScreen.storyboard in Resources */,
+				CBB4212824482F8400FA3CC3 /* TableViewCell.xib in Resources */,
 				CBB420FF2448277900FA3CC3 /* Assets.xcassets in Resources */,
 				CBB420FD2448277600FA3CC3 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB420FA2448277600FA3CC3 /* ViewController.swift in Sources */,
+				CBB4212724482F8400FA3CC3 /* TableViewCell.swift in Sources */,
 				CBB420F62448277600FA3CC3 /* AppDelegate.swift in Sources */,
 				CBB420F82448277600FA3CC3 /* SceneDelegate.swift in Sources */,
 			);
