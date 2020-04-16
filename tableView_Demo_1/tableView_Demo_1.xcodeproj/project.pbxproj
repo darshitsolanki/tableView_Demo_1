@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B5B2257244862F000A1EA5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B2256244862F000A1EA5E /* DetailViewController.swift */; };
 		CBB420F62448277600FA3CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB420F52448277600FA3CC3 /* AppDelegate.swift */; };
 		CBB420F82448277600FA3CC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB420F72448277600FA3CC3 /* SceneDelegate.swift */; };
 		CBB420FA2448277600FA3CC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB420F92448277600FA3CC3 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B5B2256244862F000A1EA5E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CBB420F22448277600FA3CC3 /* tableView_Demo_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableView_Demo_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB420F52448277600FA3CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBB420F72448277600FA3CC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				CBB420F72448277600FA3CC3 /* SceneDelegate.swift */,
 				CBB420F92448277600FA3CC3 /* ViewController.swift */,
 				CBB420FB2448277600FA3CC3 /* Main.storyboard */,
+				6B5B2256244862F000A1EA5E /* DetailViewController.swift */,
 				CBB4212924482F8D00FA3CC3 /* cell */,
 				CBB420FE2448277900FA3CC3 /* Assets.xcassets */,
 				CBB421002448277900FA3CC3 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 			files = (
 				CBB420FA2448277600FA3CC3 /* ViewController.swift in Sources */,
 				CBB4212724482F8400FA3CC3 /* TableViewCell.swift in Sources */,
+				6B5B2257244862F000A1EA5E /* DetailViewController.swift in Sources */,
 				CBB420F62448277600FA3CC3 /* AppDelegate.swift in Sources */,
 				CBB420F82448277600FA3CC3 /* SceneDelegate.swift in Sources */,
 			);

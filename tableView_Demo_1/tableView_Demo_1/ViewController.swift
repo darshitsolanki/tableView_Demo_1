@@ -10,6 +10,7 @@ import UIKit
 
 struct Movie {
     var movieName: String
+    var movieDetail : String
 }
 
 class ViewController: UIViewController {
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.dataSource = self
-        
+        tableView.delegate = self
     }
 
 
@@ -39,16 +40,16 @@ extension ViewController {
     
     func addMovies() {
         
-        movieList.append(Movie(movieName: "movie1"))
-        movieList.append(Movie(movieName: "movie2"))
-        movieList.append(Movie(movieName: "movie3"))
-        movieList.append(Movie(movieName: "movie4"))
-        movieList.append(Movie(movieName: "movie5"))
-        movieList.append(Movie(movieName: "movie6"))
-        movieList.append(Movie(movieName: "movie7"))
-        movieList.append(Movie(movieName: "movie8"))
-        movieList.append(Movie(movieName: "movie9"))
-        movieList.append(Movie(movieName: "movie10"))
+        movieList.append(Movie(movieName: "movie1", movieDetail: "It is movie1 with nice concept"))
+        movieList.append(Movie(movieName: "movie2", movieDetail: "It is movie2 with nice drama"))
+        movieList.append(Movie(movieName: "movie3", movieDetail: "It is movie3 with nice comedy"))
+        movieList.append(Movie(movieName: "movie4", movieDetail: "It is movie4 with nice horror"))
+        movieList.append(Movie(movieName: "movie5", movieDetail: "It is movie5 with nice story"))
+        movieList.append(Movie(movieName: "movie6", movieDetail: "It is movie6 with nice emotion"))
+        movieList.append(Movie(movieName: "movie7", movieDetail: "It is movie7 and family movie"))
+        movieList.append(Movie(movieName: "movie8", movieDetail: "It is movie8 with nice concept"))
+        movieList.append(Movie(movieName: "movie9", movieDetail: "It is movie9 with nice drama"))
+        movieList.append(Movie(movieName: "movie10", movieDetail: "It is movie10 with nice politics"))
         
     }
     
@@ -72,3 +73,14 @@ extension ViewController: UITableViewDataSource {
     
 }
 
+extension ViewController: UITableViewDelegate
+{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
+        vc.txt = movieList[indexPath.row].movieDetail
+        print(movieList[indexPath.row].movieDetail)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+
+    }
+}
